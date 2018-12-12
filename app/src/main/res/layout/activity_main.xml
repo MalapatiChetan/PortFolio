@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/website"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/bablu_round"
+                app:civ_border_color="@color/colorAccent"
+
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="CHETAN"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:textStyle="italic"
+                app:fontFamily="@font/alfa_slab_one" />
+
+            <TextView
+                android:id="@+id/proffession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="8dp"
+                android:text="ANDROID DEVELOPER"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="300dp"
+                app:cardElevation="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="135dp"
+                android:layout_height="53dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    
+                    <TextView
+                        android:id="@+id/touch"
+                        android:drawableLeft="@android:drawable/ic_menu_call"
+                        android:text="touch to call."
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    
+                    
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablelayout"
+            android:background="@color/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+
+
+            android:id="@+id/viewpager"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v4.view.ViewPager>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

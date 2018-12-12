@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+
+    <string name="about_chetan">"Hi,my name is Chetan."\n" It's been over years of time....now iam at 19 where iam doing my UG at Clg.. "
+
+
+
+    </string>
+
+
+    <string name="skills">
+        "* C "\n" * DataStructures "\n" * AndroidDeveloper with Java"
+
+
+    </string>
+<string name="work">
+"* Exploring "\n" * Dancing"
+
+</string>
+    <string name="contact">
+"8500862490"
+
+    </string>
+
+
+</resources>
